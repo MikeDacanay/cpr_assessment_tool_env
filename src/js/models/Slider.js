@@ -26,6 +26,7 @@ export default class Slider {
   		sumofVal += val;
   	}
 
-  	this.val = sumofVal/this.maxSet.length;
+  	// this.val = sumofVal/this.maxSet.length;
+  	this.val = Math.round(100*(1/qLen)*(sumofVal/this.maxSet.length/100));
   }    	
 }
